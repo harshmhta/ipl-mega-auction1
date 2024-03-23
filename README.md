@@ -1,60 +1,75 @@
-# IPL AUCTION SYSTEM
-This project is about creating the database of IPL Auction System by using some data stuctures.
+# IPL Player Auction App
 
+This is a realtime auction application, using Node.js as backend, React.js as frontend and MongoDb as Database.
 
-## Project Description
-IPL Auction System is a one of the  platform which  holds auction for cricket
-players. BCCI is the organisation which will conduct the IPL auction every year.  Admin is the person who will host the  complete program by  releasing  the players and makes them available for sale.  IPL auctions are conducted offline in a conference and every team manager bids for the player. The players will be sold to the team of highest bidder.
+**Home Page**
+![Home Page](./screenshots/main_page.png)
 
+**Admin Page**
+![Main page](./screenshots/admin_page.png)
 
+**Realtime Bidding**
+![Realtime biddng](./screenshots/realtime_bidding.png)
 
-Players register themselves for the auction along with a certain base price. Whereas team managers get their credentials from the admin. The terms and conditions which was displayed by the cricket board should be  followed by team managers during the entire
-auction system. Our System will automatically sell the player to the highest bidder during the auction. And it will also conduct an Auction once again for any player
-remaining unsold. 
- 
+## Installation
 
+use the following steps to run the projects to run this project in your local system.
 
+### Install Node.js
 
-## Functional Requirements of the System:
+Install Node.js in your system from [here](https://nodejs.org/en/download/).
 
-* bash
-* There should be two panels dedicated to Admin and Team Manager.
-* Each team manager should login with the given credentials before
-working on the system.
-*  Admin will have the options to manage profiles of different types of
-team managers and players registered.
-* Users should be able to securely login and logout after performing
-the task.
+### Setup MongoDb in your system
 
+You can download MongoDb for your system form [here](https://www.mongodb.com/docs/manual/installation/). If you do not want to install it in your local system your can use Mongodb Atlas to get a MongoDb URI.
+Find out more about MongoDb Atlas [here](https://www.mongodb.com/atlas/database)
 
-## Features of the project
+### Clone the project
 
-python
-* Admin Login: Admin can login into the system and display
-players one by one to start the auction.
+clone the project in your local system.
 
-* Team Manager Login: Team manager can login, search and
-start bidding for the players.
+```bash
+git clone https://github.com/lugnitdgp/GSOC-HEAT-Ipl_Auction_App.git
+```
 
-* Each Team Manager has a 90cr. maximum limit for the entire
-auction program. Where the amount spent on players will be
-detected.
+### Install the dependencies
 
-* Team managers get 30 seconds to bid for a player. The player
-will be held unsold if no team manager bids within 1 minute.
+Now you have to install the depedencies. In your terminal cd into the frontend directory and type
 
-* Stack is used to push the players purchased by the team manager.
+```bash
+npm install
+```
 
+now cd into the backend directory and type
 
-## Working of the project
+```bash
+npm install
+```
 
-* The unsold Players will be moved to Queue. So, it can be
-presented again later for the auction.
+### Install nodemon
 
+Install nodemon globally to run the
 
-* Players who are purchased by Team Managers will be added
-to their respective Team Stack.
+### Set up environment varibles
 
+Create a ``.env`` file inside your project directory, And set up your environment variables. You can see ``.env.example`` for reference.
 
-## License
-[IPL](https://github.com/Singhsansar/IPL-Auction-System)
+### Run the project
+
+Run the Node.js server, First cd into backend and run
+
+```bash
+nodemon start
+```
+
+Run React frontend, cd into frontend and run
+
+```bash
+npm start
+```
+
+Now you the view the project by going to <http://localhost:3000/>
+
+## Contribute to this project
+
+Check out [CONTRIBUTING.md](./CONTRIBUTING.md) file to know more about contributing.
