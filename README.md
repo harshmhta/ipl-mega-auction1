@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# IPL AUCTION SYSTEM
+This project is about creating the database of IPL Auction System by using some data stuctures.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Description
+IPL Auction System is a one of the  platform which  holds auction for cricket
+players. BCCI is the organisation which will conduct the IPL auction every year.  Admin is the person who will host the  complete program by  releasing  the players and makes them available for sale.  IPL auctions are conducted offline in a conference and every team manager bids for the player. The players will be sold to the team of highest bidder.
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Players register themselves for the auction along with a certain base price. Whereas team managers get their credentials from the admin. The terms and conditions which was displayed by the cricket board should be  followed by team managers during the entire
+auction system. Our System will automatically sell the player to the highest bidder during the auction. And it will also conduct an Auction once again for any player
+remaining unsold. 
+ 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Functional Requirements of the System:
 
-### `yarn build`
+* bash
+* There should be two panels dedicated to Admin and Team Manager.
+* Each team manager should login with the given credentials before
+working on the system.
+*  Admin will have the options to manage profiles of different types of
+team managers and players registered.
+* Users should be able to securely login and logout after performing
+the task.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features of the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+python
+* Admin Login: Admin can login into the system and display
+players one by one to start the auction.
 
-### `yarn eject`
+* Team Manager Login: Team manager can login, search and
+start bidding for the players.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Each Team Manager has a 90cr. maximum limit for the entire
+auction program. Where the amount spent on players will be
+detected.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Team managers get 30 seconds to bid for a player. The player
+will be held unsold if no team manager bids within 1 minute.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Stack is used to push the players purchased by the team manager.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Working of the project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* The unsold Players will be moved to Queue. So, it can be
+presented again later for the auction.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+* Players who are purchased by Team Managers will be added
+to their respective Team Stack.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+[IPL](https://github.com/Singhsansar/IPL-Auction-System)
