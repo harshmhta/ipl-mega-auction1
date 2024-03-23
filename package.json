@@ -1,29 +1,52 @@
 {
-  "name": "acl",
-  "version": "1.0.0",
-  "description": "An auction software made for the bidding of players in an annual cricketing tournament called Ace Cricket League.",
-  "main": "app.js",
+  "name": "material-dashboard",
+  "version": "2.1.2",
+  "description": "Material Dasboard, a Google Material Desgin. Coded by Creative Tim",
+  "main": "index.html",
+  "directories": {
+    "example": "root"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "open-app": "gulp open-app",
+    "start": "npm run open-app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/material-dashboard.git"
   },
   "keywords": [
-    "auction",
-    "software",
-    "ACL",
-    "cricket"
+    "material dashboard",
+    "bootstrap material admin",
+    "bootstrap material dashboard",
+    "material design admin",
+    "material design",
+    "creative tim",
+    "html dashboard",
+    "html css dashboard",
+    "web dashboard",
+    "freebie",
+    "free bootstrap dashboard",
+    "css3 dashboard",
+    "bootstrap admin",
+    "bootstrap dashboard",
+    "frontend",
+    "responsive bootstrap dashboard"
   ],
-  "author": "Sabarinath S., Saif Lakhani, Deepti Tanpure, Vishva Iyer",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.3",
-    "cors": "^2.8.4",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "mysql": "^2.15.0",
-    "path": "^0.12.7",
-    "redis": "^2.8.0",
-    "socket.io": "^2.0.4"
-  }
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/material-dashboard/issues"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-open": "^3.0.1"
+  },
+  "homepage": "http://demos.creative-tim.com/material-dashboard/examples/dashboard.html?_ga=2.143239282.69692347.1519629130-329288944.1519374311"
 }
